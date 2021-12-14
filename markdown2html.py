@@ -9,7 +9,7 @@ if __name__ == '__main__':
     if len(sys.argv) != 3:
         print('Usage: ./markdown2html.py README.md README.html')
         exit(1)
-    if path.isfile(sys.argv[1]) == False:
+    if os.path.isfile(sys.argv[1]) == False:
         print('Missing {}'.format(sys.argv[1]))
         exit(1)
     else:
